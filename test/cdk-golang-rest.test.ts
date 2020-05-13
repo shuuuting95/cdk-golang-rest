@@ -1,13 +1,15 @@
-import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
-import * as cdk from '@aws-cdk/core';
-import * as CdkGolangRest from '../lib/cdk-golang-rest-stack';
+// 未使用
 
-test('Empty Stack', () => {
-    const app = new cdk.App();
-    // WHEN
-    const stack = new CdkGolangRest.CdkGolangRestStack(app, 'MyTestStack');
-    // THEN
-    expectCDK(stack).to(matchTemplate({
-      "Resources": {}
-    }, MatchStyle.EXACT))
-});
+// import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
+// import * as cdk from '@aws-cdk/core';
+// import * as CdkGolangRest from '../lib/cdk-golang-rest-stack';
+
+// test('Empty Stack', () => {
+//     const app = new cdk.App();
+//     // WHEN
+//     const stack = new CdkGolangRest.CdkGolangRestStack(app, 'MyTestStack');
+//     // THEN
+//     expectCDK(stack).to(matchTemplate({
+//       "Resources": {}
+//     }, MatchStyle.EXACT))
+// });

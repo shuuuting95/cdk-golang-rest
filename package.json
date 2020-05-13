@@ -6,6 +6,8 @@
   },
   "scripts": {
     "build": "tsc",
+    "build:golang": "sh build.sh",
+    "build:all": "tsc && npm run build:golang",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
@@ -21,6 +23,9 @@
     "typescript": "~3.7.2"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.35.0",
+    "@aws-cdk/aws-dynamodb": "^1.35.0",
+    "@aws-cdk/aws-lambda": "^1.35.0",
     "@aws-cdk/core": "1.35.0",
     "source-map-support": "^0.5.16"
   }

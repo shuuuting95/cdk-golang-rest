@@ -5,3 +5,4 @@ import { CdkGolangRestStack } from '../lib/cdk-golang-rest-stack';
 
 const app = new cdk.App();
 new CdkGolangRestStack(app, 'CdkGolangRestStack');
+app.synth();
